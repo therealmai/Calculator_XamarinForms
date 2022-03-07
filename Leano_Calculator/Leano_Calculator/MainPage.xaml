@@ -4,13 +4,14 @@
              x:Class="Leano_Calculator.MainPage">
     <StackLayout BackgroundColor="black">
         <Frame BackgroundColor="Black">
-          <Label Text="0"
+            <Label x:Name="LabelResult"
+                   Text="0"
                    FontSize="82"
                    TextColor="White"
                    FontAttributes="Bold"
                    HorizontalTextAlignment="End"
                    BackgroundColor="Black">
-                
+
             </Label>
         </Frame>
         <Grid Padding="5,0"
@@ -31,7 +32,9 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <!--C-->
-            <Button Grid.Row="0"
+            <Button
+                x:Name="resetButton"
+                Grid.Row="0"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
                 Text="C"
@@ -39,14 +42,18 @@
                 BackgroundColor="#808080"
                 />
             <!--DEL-->
-            <Button Grid.Row="0" 
+            <Button 
+                x:Name="deleteButton"
+                Grid.Row="0" 
                 Grid.Column="2"
                 Text="DEL"
                 FontSize="21"
                 BackgroundColor="#808080"
                 />
             <!--/-->
-            <Button Grid.Row="0"
+            <Button 
+                x:Name="divideButton"
+                Grid.Row="0"
                 Grid.Column="3"
                 Text="/"
                 TextColor="White"
@@ -54,106 +61,156 @@
                 BackgroundColor="#ffa500"
                 />
             <!--7-->
-            <Button Grid.Row="1"
+            <Button 
+                x:Name="btnSeven"
+                Clicked="btnNumber_Clicked"
+                Grid.Row="1"
                 Grid.Column="0"
                 Text="7"
                 FontSize="21"
                 BackgroundColor="#808080"
                 />
             <!--8-->
-            <Button Grid.Row="1"
+            <Button
+                x:Name="btnEight"
+                Clicked="btnNumber_Clicked"
+                Grid.Row="1"
                 Grid.Column="1"
                 Text="8"
                 FontSize="21"
                 BackgroundColor="#808080"
                 />
             <!--9-->
-            <Button Grid.Row="1"
+            <Button 
+                x:Name="btnNine"
+                Clicked="btnNumber_Clicked"
+                Grid.Row="1"
                 Grid.Column="2"
                 Text="9"
+                FontSize="21"
                 BackgroundColor="#808080"
                 />
             <!--x-->
-            <Button Grid.Row="1"
+            <Button 
+                x:Name="multiplyButton"
+                Grid.Row="1"
                 Grid.Column="3"
                 Text="x"
+                FontSize="21"
                 TextColor="White"
                 BackgroundColor="#ffa500"
                 />
             <!--4-->
-            <Button Grid.Row="2"
+            <Button
+                x:Name="btnFour"
+                Clicked="btnNumber_Clicked"
+                Grid.Row="2"
                 Grid.Column="0"
                 Text="4"
+                FontSize="21"
                 BackgroundColor="#808080"
                 />
             <!--5-->
-            <Button Grid.Row="2"
+            <Button
+                x:Name="btnFive"
+                Clicked="btnNumber_Clicked"
+                Grid.Row="2"
                 Grid.Column="1"
                 Text="5"
+                FontSize="21"
                 BackgroundColor="#808080"
                 />
             <!--6-->
-            <Button Grid.Row="2"
+            <Button 
+                x:Name="btnSix"
+                Clicked="btnNumber_Clicked"
+                Grid.Row="2"
                 Grid.Column="2"
                 Text="6"
+                FontSize="21"
                 BackgroundColor="#808080"
                 />
             <!-- - -->
-            <Button Grid.Row="2"
+            <Button 
+                x:Name="minusButton"
+                Grid.Row="2"
                 Grid.Column="3"
                 Text="-"
                 TextColor="White"
+                FontSize="21"
                 BackgroundColor="#ffa500"
                 />
             <!--1-->
-            <Button Grid.Row="3"
+            <Button 
+                x:Name="btnOne"
+                Clicked="btnNumber_Clicked"
+                Grid.Row="3"
                 Grid.Column="0"
                 Text="1"
+                FontSize="21"
                 BackgroundColor="#808080"
                 />
             <!--2-->
-            <Button Grid.Row="3"
+            <Button 
+                x:Name="btnTwo"
+                Clicked="btnNumber_Clicked"
+                Grid.Row="3"
                 Grid.Column="1"
                 Text="2"
+                FontSize="21"
                 BackgroundColor="#808080"
                 />
             <!--3-->
-            <Button Grid.Row="3"
+            <Button 
+                x:Name="btnThree"
+                Clicked="btnNumber_Clicked"
+                Grid.Row="3"
                 Grid.Column="2"
                 Text="3"
+                FontSize="21"
                 BackgroundColor="#808080"
                 />
             <!--+-->
-            <Button Grid.Row="3"
+            <Button 
+                x:Name="plusButton"
+                Grid.Row="3"
                 Grid.Column="3"
                 Text="+"
                 TextColor="White"
+                FontSize="21"
                 BackgroundColor="#ffa500"
                 />
             <!--0-->
-            <Button Grid.Row="4"
+            <Button 
+                x:Name="btnZero"
+                Clicked="btnNumber_Clicked"
+                Grid.Row="4"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
                 Text="0"
+                FontSize="21"
                 BackgroundColor="#808080"   
                 />
             <!--.-->
-            <Button Grid.Row="4"
+            <Button 
+                x:Name="decimalButton"
+                Clicked="btnNumber_Clicked"
+                Grid.Row="4"
                 Grid.Column="2"
                 Text="."
+                FontSize="21"
                 BackgroundColor="#808080"
                 />
             <!--=-->
-            <Button Grid.Row="4"
+            <Button 
+                x:Name="equalButton"
+                Grid.Row="4"
                 Grid.Column="3"
                 Text="="
                 TextColor="White"
+                FontSize="21"
                 BackgroundColor="#ffa500"
                 />
         </Grid>
-
     </StackLayout>
-
-   
-
 </ContentPage>

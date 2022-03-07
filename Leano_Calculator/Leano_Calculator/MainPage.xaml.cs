@@ -14,5 +14,18 @@ namespace Leano_Calculator
         {
             InitializeComponent();
         }
+
+        private void btnNumber_Clicked(object sender, EventArgs e)
+        {
+            var button = sender as Button;
+            if(LabelResult.Text == "0")
+            {
+                LabelResult.Text = button.Text;
+            }
+            else
+            {
+                LabelResult.Text += button.Text;
+            }
+        }
     }
 }
