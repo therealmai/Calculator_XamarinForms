@@ -64,6 +64,7 @@
             <Button Grid.Row="1"
                 Grid.Column="1"
                 Text="8"
+                FontSize="21"
                 BackgroundColor="#808080"
                 />
             <!--9-->
