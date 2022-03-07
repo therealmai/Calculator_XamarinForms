@@ -34,6 +34,7 @@
             <!--C-->
             <Button
                 x:Name="resetButton"
+                Clicked="resetButton_Clicked"
                 Grid.Row="0"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
@@ -44,6 +45,7 @@
             <!--DEL-->
             <Button 
                 x:Name="deleteButton"
+                Clicked="deleteButton_Clicked"
                 Grid.Row="0" 
                 Grid.Column="2"
                 Text="DEL"
@@ -53,6 +55,7 @@
             <!--/-->
             <Button 
                 x:Name="divideButton"
+                Clicked="operationButton_Clicked"
                 Grid.Row="0"
                 Grid.Column="3"
                 Text="/"
@@ -92,7 +95,8 @@
                 />
             <!--x-->
             <Button 
-                x:Name="multiplyButton"
+                x:Name="multiplicationButton"
+                Clicked="operationButton_Clicked"
                 Grid.Row="1"
                 Grid.Column="3"
                 Text="x"
@@ -133,6 +137,7 @@
             <!-- - -->
             <Button 
                 x:Name="minusButton"
+                Clicked="operationButton_Clicked"
                 Grid.Row="2"
                 Grid.Column="3"
                 Text="-"
@@ -173,6 +178,7 @@
             <!--+-->
             <Button 
                 x:Name="plusButton"
+                Clicked="operationButton_Clicked"
                 Grid.Row="3"
                 Grid.Column="3"
                 Text="+"
@@ -194,7 +200,7 @@
             <!--.-->
             <Button 
                 x:Name="decimalButton"
-                Clicked="btnNumber_Clicked"
+                Clicked="decimalButton_Clicked"
                 Grid.Row="4"
                 Grid.Column="2"
                 Text="."
@@ -204,6 +210,7 @@
             <!--=-->
             <Button 
                 x:Name="equalButton"
+                Clicked="equalButton_Clicked"
                 Grid.Row="4"
                 Grid.Column="3"
                 Text="="
